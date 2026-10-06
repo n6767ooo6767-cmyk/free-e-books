@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Скачать файл</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%);
+    color: #fff;
+    padding: 20px;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 48px 40px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  }
+  .icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+  .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+  }
+  .btn:active {
+    transform: translateY(0);
+  }
+  .note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="icon">📦</span>
+    <h1>Название файла</h1>
+    <p>Нажми кнопку ниже, чтобы скачать.</p>
+    <a href="Фрауке_Шойнеманн_Оживший_страж_гробницы-skompresowany.pdf" download class="btn">Скачать</a>
+    <div class="note">Файл проверен и безопасен</div>
+  </div>
+</body>
+</html>
